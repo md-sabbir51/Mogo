@@ -1,6 +1,6 @@
 $(".header-slider").owlCarousel({
-    autoplay: true,
-    loop: true,
+    // autoplay: true,
+    // loop: true,
       responsive: {
         0: {
           items: 1,
