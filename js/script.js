@@ -16,8 +16,8 @@ $(".header-slider").owlCarousel({
 
 // counter start
 $(".counter").counterUp({
-  delay: 12,
-  time: 2500,
+  delay: 10,
+  time: 2000,
   offset: 70,
   formatter: function (n) {
     return n.replace(/,/g, ".");

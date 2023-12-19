@@ -3,7 +3,7 @@
     /* TEXT VARIABLES */
     --text-dark: #000;
     --text-light: #fff;
-    --text-grey: #adbdcc;
+    --text-grey: #8d9cab;
     --text-orenge: #f5aeae;
     --text-yollow: #feec8b;
     --body-font: "Roboto", sans-serif;
@@ -74,14 +74,31 @@ a {
     font-weight: 400;
 }
 
-/* h2::before {
-    content: '';
+.subtitle {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size) !important;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 10px 0 30px 0;
+    /* box-sizing: border-box; */
+    font-size: var(--h4-size);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+ h2::before {
+    content: "";
     position: absolute;
-    bottom: 0;
+    /* top: 0; */
     width: 50px;
     height: 2px;
     background-color: var(--orenge-1);
-} */
+    margin: 60px 0 0 0;
+}
 /* Layout style end */
 /* Owl start */
 .owl-item {
@@ -248,19 +265,9 @@ a {
     align-items: center;
 }
 
-.main-what .section-container .we {
-    font-family: var(--heading-font);
-    font-size: var(--heading-font-size);
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.main-what .section-container h2 {
-    margin: 10px 0 30px 0;
-    /* box-sizing: border-box; */
-    font-size: var(--h4-size);
-    text-transform: uppercase;
-}
+/* .main-what .section-container .what-section h2 {
+    margin: 0 0 10px 0;
+} */
 
 .main-what .section-container p {
     display: flex;
@@ -271,6 +278,7 @@ a {
 
 .main-what .section-container .p-opa {
     color: var(--text-grey);
+    margin: 30px 0 0 0;
 }
 /* img-section start */
 .img-section {
@@ -352,3 +360,48 @@ a {
     color: var(--text-light);
 }
 /* counter-section end */
+/* We work with start */
+.main-work {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 3rem 0;
+}
+
+.main-work .section-container .subtitle,.main-work .section-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+    margin: 80px 0 0 0;
+}
+
+.work-grid .work-item {
+    display: flex;
+}
+
+.work-grid .work-item .work-letter {
+    margin: 0 0 0 30px;
+}
+
+.work-grid .work-item .work-letter h5 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 15px;
+}
+
+.work-grid .work-item .work-letter p {
+    font-size: var(--secondary-text-size);
+    color: var(--text-grey);
+    width: 80%;
+}
+
+.work-grid .work-line {
+    border-bottom: 1px solid #aca7a755;
+    padding: 0 0 35px 0;
+}
+/* We work with  */
