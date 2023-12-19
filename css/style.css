@@ -237,7 +237,7 @@ h2 {
 .header-num {
     position: absolute;
     bottom: 5px;
-    left: 140px;
+    left: 145px;
     z-index: 1;
     display: flex;
 }
