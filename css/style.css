@@ -1142,4 +1142,23 @@ h2 {
     font-size: 12px;
 }
 /* secound footer-item end */
+/* Third footer-item start */
+.main-thi-footer h5 {
+    text-transform: uppercase;
+    font-size: var(--secondary-text-size);
+    margin: 15px 2px 30px 2px;
+    font-weight: 500;
+
+}
+
+.main-thi-footer .thi-footer-img {
+    letter-spacing: -2px;
+    margin: 0 2px;
+}
+
+.main-thi-footer p {
+   color: var(--text-grey);
+   font-size: 12px;
+   margin: 10px 2px;
+}
 /* Footer end */
