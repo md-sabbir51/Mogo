@@ -1840,11 +1840,11 @@ left: 12%;
 }
 
 .main-map {
-    top: 133rem;
+    top: 136rem;
 }
 
 .main-footer {
-    top: 133rem;
+    top: 136rem;
 }
 }
 /* Max width 623px end */
@@ -1886,7 +1886,7 @@ left: 12%;
 }
 
 .main-devices .back-img .section-container .display-img img {
-    height: 393px;
+    height: 429px;
     width: 370px;
 }
 
@@ -1909,6 +1909,18 @@ left: 12%;
 
 .main-happy-flex {
     padding: 0;
+}
+
+.main-grid .grid-item .tittle p {
+    font-size: 10px;
+}
+
+.main-grid .grid-item .tittle .g-para {
+    font-size: 11px !important;
+}
+
+.main-grid .grid-item .tittle img {
+    width: 20px;
 }
 }
 /* Max width 503px end */
