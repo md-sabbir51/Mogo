@@ -1316,7 +1316,16 @@ left: 12%;
 
     .img-section .img-grid {
         grid-template-columns: repeat(1, 1fr);
-}
+    }
+
+    .img-section .img-grid .tittle {
+        font-size: 25px;
+    }
+    
+    #who-icon i {
+        font-size: 25px;
+    }
+
 .main-coun .section-container .coun-grid .coun-item h1 {
     font-size: var(--h4-size);
 }
