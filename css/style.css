@@ -1447,6 +1447,10 @@ left: 12%;
 .main-grid .grid-item .tittle img {
     width: 20px;
 }
+
+.main-happy img {
+    height: 1050px;
+}
 }
 /* Max width 503px end */
 /* Mobile section end */
