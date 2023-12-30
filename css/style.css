@@ -925,15 +925,69 @@ h2 {
 }
 /* Joshua-slider end */
 /* Happy clients start */
+.main-happy {
+    display: flex;
+    justify-content: center;
+}
 
+.main-happy img {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+}
 
+.main-happy .section-container {
+    position: relative;
+    top: 50px;
+}
 
+.main-happy .section-container .happy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 40px 0 0 0;
+    row-gap: 40px;
+    column-gap: 40px;
+}
 
+.main-happy .section-container .happy-grid .happy-sec {
+    display: flex;
+}
 
+.main-happy .section-container .happy-grid .happy-sec .happy-item img {
+   height: 100px;
+   width: 100px;
+   position: relative;
+}
+
+.main-happy .section-container .happy-grid .happy-sec .happy-item-2 {
+    margin: 0 0 0 20px;
+}
+
+.main-happy .section-container .happy-grid .happy-sec .happy-item-2 h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-happy .section-container .happy-grid .happy-sec .happy-item-2 .graphic {
+    font-size: 12px;
+    margin: 10px 0 30px 0;
+    color: var(--text-grey);
+}
+
+.main-happy .section-container .happy-grid .happy-sec .happy-item-2 .graphic::before {
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    margin: 30px 0 0 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--orenge-1);
+}
 /* Happy flex end */
 /* Happy clients end */
 /* Our sotries start */
-
 
 
 
@@ -1074,6 +1128,15 @@ left: 12%;
     .main-what-tow .section-container .who-para {
         font-size: 12px;
     }
+
+    .main-happy .section-container .happy-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .main-happy img {
+        height: 850px;
+}
 }
 /* Max width 937px end */
 /* Max width 876px start */ 
@@ -1273,6 +1336,10 @@ left: 12%;
         font-size: 13px;
     }
 
+    .main-happy img {
+        height: 900px;
+    }
+
 }
 /* Max width 712px end */
 /* Max width 623px start */
@@ -1296,6 +1363,10 @@ left: 12%;
 
     .main-devices .back-img .section-container .display-img img {
         height: 470px;
+}
+
+.main-happy img {
+    height: 1000px;
 }
 
 }
