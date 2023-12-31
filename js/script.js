@@ -49,8 +49,8 @@ iconAnimation3.addEventListener('click', function(){
 // Service Animation-click end
 //Header-slider start
 $(".jon-slider").owlCarousel({
-  // autoplay: true,
-  // loop: true,
+  autoplay: true,
+  loop: true,
     responsive: {
       0: {
         items: 1,
