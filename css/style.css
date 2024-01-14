@@ -91,6 +91,7 @@ h2 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
  h2::before {
@@ -385,10 +386,6 @@ h2 {
     align-items: center;
 }
 
-/* .main-what .section-container .what-section h2 {
-    margin: 0 0 10px 0;
-} */
-
 .main-what .section-container p {
     display: flex;
     justify-content: center;
@@ -427,10 +424,6 @@ h2 {
     width: 100%;
     height: 100%;
 }
-
-/* .img-section .img-grid .image:hover {
-    box-shadow: 9px 9px 0px #95e1d3;
-} */
 
 .img-section .img-grid .tittle {
     position: absolute;
@@ -543,18 +536,10 @@ h2 {
     padding: 0 0 35px 0;
 }
 /* We work with  */
-/* For all devices start */
-/* img {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    padding: 30px 0 0 0;
-} */
+
 .main-devices .back-img{
     height: 600px;
 }
-
 
 .main-devices .back-img .section-container {
     position: relative;
@@ -631,74 +616,21 @@ h2 {
     margin: 0 0 0 15px;
 }
 
-.service-grid .service-item-tow .service-item-sec i {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-grey);
-}
-/* Service animate start */
-.iconAnimation,.iconAnimation2,.iconAnimation3 {
-    cursor: pointer;
+.accordion .accordion-item h2::before {
+  display: none;
 }
 
-.animate {
-    animation: chevron .4s;
-    animation-fill-mode: forwards;
+.accordion .accordion-item button img {
+    color: #00b594;
 }
 
-.animate2 {
-    animation: chevron2 .4s;
-    animation-fill-mode: forwards;
-}
-
-.animate3 {
-    animation: chevron3 .4s;
-    animation-fill-mode: forwards;
-}
-/* Service animate end */
-/* Service-Keyframe animation start */
-@keyframes chevron {
-    form {
-       transform: rotate(0);
-    }
-    to {
-       transform: rotate(180deg);
-    }
-}
-
-@keyframes chevron2 {
-    form {
-       transform: rotate(0);
-    }
-    to {
-       transform: rotate(180deg);
-    }
-}
-
-@keyframes chevron3 {
-    form {
-       transform: rotate(0);
-    }
-    to {
-       transform: rotate(180deg);
-    }
-}
-/* Service-Keyframe animation end */
-.service-grid .service-item-tow .ser-item-para p {
+.accordion .accordion-item .accordion-body .ser-item-para p {
     font-size: var(--secondary-text-size);
     color: var(--text-grey);
-    border: 1px solid #aaa3a36b;
     margin: 0;
     padding: 20px;
-    border-top: none;
-    /* height: 110px; */
-    transition: .4s;
-    /* display: none; */
+    font-family: 'Kalam', cursive;
 }
-
-
 /* Service end */
 /* Jon-slider start */
 .main-jon-slider {
@@ -877,18 +809,22 @@ h2 {
 
 .main-grid .grid-item .tittle {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: #fff;
     font-size: var(--subtitle-size);
-    transform: translate(-50%, -50%);
     width: 100%;
-    text-align: center;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transition: 400ms;
     font-weight: 500;
     cursor: pointer;
-    background-color: var(--primary-gradient);
+    background: var(--primary-gradient);
 }
 
 .main-grid .grid-item:hover .tittle {
@@ -897,6 +833,8 @@ h2 {
 
 .main-grid .grid-item .tittle img {
     width: 25px;
+    height: 25px;
+    margin:  0 0 5px 0;
 }
 
 .main-grid .grid-item .tittle p {
@@ -908,6 +846,7 @@ h2 {
 .main-grid .grid-item .tittle .g-para {
     font-size: 12px !important;
     opacity: .7;
+    margin: 0;
 }
 /* Main grid end */
 /* Main-joshua start */
@@ -1054,6 +993,7 @@ h2 {
  .main-stories .section-container .stories-flex .stories-item .stories-content .stories-icon {
     display: flex;
     border-top: 1px solid #e1dbdb;
+    padding: 15px 0 0 0;
  }
  
  .main-stories .section-container .stories-flex .stories-item .stories-content .stories-icon .icon-1 {
@@ -1063,6 +1003,11 @@ h2 {
     color: var(--text-grey);
     margin:  0 20px 0 0;
     cursor: pointer;
+ }
+ 
+ .main-stories .section-container .stories-flex .stories-item .stories-content .stories-icon p {
+    margin: 0;
+    padding: 0 0 0 5px;
  } 
 
  .main-stories .section-container .stories-flex .stories-item .stories-content .stories-icon .icon-2 {
@@ -1133,6 +1078,8 @@ h2 {
 .main-footer .section-container .footer-grid .footer-item h3 {
     border-bottom: 1px solid #c3b8b8;
     padding: 0 0 15px 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .main-footer .section-container .footer-grid .footer-item .footer-icon {
@@ -1225,7 +1172,7 @@ h2 {
 .main-thi-footer h5 {
     text-transform: uppercase;
     font-size: var(--secondary-text-size);
-    margin: 15px 2px 30px 2px;
+    margin: 15px 2px 30px 45px;
     font-weight: 500;
 
 }
@@ -1233,12 +1180,13 @@ h2 {
 .main-thi-footer .thi-footer-img {
     letter-spacing: -2px;
     margin: 0 2px;
+    text-align: center;
 }
 
 .main-thi-footer p {
    color: var(--text-grey);
    font-size: 12px;
-   margin: 10px 2px;
+   margin: 10px 45px;
 }
 /* template start */
 .templete h5 {
